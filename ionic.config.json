@@ -1,0 +1,7 @@
+{
+  "name": "caixaRotary",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
