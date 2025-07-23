@@ -1,20 +1,112 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <div slot="start" class="header-text">
+      <div class="header-title">Caixa</div>
+      <div class="header-subtitle">Rotary Club Pato Branco Alvorecer</div>
+    </div>
+
+    <ion-buttons slot="end" class="menu-button">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="wrapper">
+    <ion-card class="resumo-do-dia">
+      <ion-card-header>
+        <ion-card-title>Resumo do Dia</ion-card-title>
+      </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-card-content>
+        <div>
+          <div class="label">Total Vendido</div>
+          <div class="amount">R$ 2.456,80</div>
+        </div>
+
+        <div>
+          <div class="label">Pedidos</div>
+          <div class="amount">54</div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="acoes-principais">
+      <div class="acoes-title">Ações Principais</div>
+
+      <div class="cards-acoes-rapidas">
+        <ion-card class="card-novo-pedido">
+          <div class="icon-wrapper">
+            <ion-icon name="cart-outline"></ion-icon>
+          </div>
+          <div class="label">Novo Pedido</div>
+        </ion-card>
+
+        <ion-card class="card-historico">
+          <div class="icon-wrapper">
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+          <div class="label">Histórico</div>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="mais-vendidos">
+      <div class="vendidos-title">Mais Vendidos Hoje</div>
+
+      <ion-card class="mais-vendidos-card">
+        <ion-list lines="none">
+          <ion-item class="item-vendido">
+            <div class="icon-wrapper">
+              <ion-icon name="wine-outline"></ion-icon>
+            </div>
+            <ion-label>
+              <h2>Vinho Cabernet</h2>
+              <p>50 vendidos</p>
+            </ion-label>
+            <div class="preco">R$ 100,00</div>
+          </ion-item>
+
+          <ion-item class="item-vendido">
+            <div class="icon-wrapper">
+              <ion-icon name="water-outline"></ion-icon>
+            </div>
+            <ion-label>
+              <h2>Água</h2>
+              <p>200 vendidos</p>
+            </ion-label>
+            <div class="preco">R$ 10,00</div>
+          </ion-item>
+
+          <ion-item class="item-vendido">
+            <div class="icon-wrapper">
+              <ion-icon name="beer-outline"></ion-icon>
+            </div>
+            <ion-label>
+              <h2>Cerveja</h2>
+              <p>100 vendidos</p>
+            </ion-label>
+            <div class="preco">R$ 20,00</div>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    </div>
+
+    <div class="acesso-rapido">
+      <div class="acesso-titulo">Acesso Rápido</div>
+      <div class="acesso-botoes">
+        <ion-card class="botao-atalho botao-produtos">
+          <ion-icon name="cube-outline"></ion-icon>
+          <div class="label">Produtos</div>
+        </ion-card>
+
+        <ion-card class="botao-atalho botao-relatorios">
+          <ion-icon name="receipt-outline"></ion-icon>
+          <div class="label">Relatórios</div>
+        </ion-card>
+      </div>
+    </div>
   </div>
 </ion-content>
